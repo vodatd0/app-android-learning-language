@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            Intent intent = new Intent(MainActivity.this, lession_activity.class);
+            Intent intent = new Intent(MainActivity.this, lession_layout_activity.class);
             startActivity(intent);
 
         }
