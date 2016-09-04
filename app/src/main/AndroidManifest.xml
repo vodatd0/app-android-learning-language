@@ -15,7 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lession_activity"></activity>
         <activity android:name=".lession_layout_activity"></activity>
     </application>
 

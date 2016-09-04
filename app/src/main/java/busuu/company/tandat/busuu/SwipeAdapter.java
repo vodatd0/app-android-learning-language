@@ -18,13 +18,13 @@ public class SwipeAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         Fragment fragment = new vocalbulary_lession_fragment_layout();
         Bundle bundle = new Bundle();
-        bundle.putInt("count", position+1);
+        bundle.putInt("position", position);
         fragment.setArguments(bundle);
         return fragment;
     }
 
     @Override
     public int getCount() {
-        return 5;
+        return 3;
     }
 }

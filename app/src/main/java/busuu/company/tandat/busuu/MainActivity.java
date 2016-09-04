@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.Currency;
 
 public class MainActivity extends AppCompatActivity {
+    public static String PACKAGE_NAME;
+
     ArrayList<Lession> lstLession1 = new ArrayList<Lession>();
 
 
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        PACKAGE_NAME = getApplicationContext().getPackageName();
 
         doCreateFakeData1();
         doCreateFakeData2();
